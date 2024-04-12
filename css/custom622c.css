@@ -1,0 +1,1068 @@
+/* custom.css */
+.rating {
+
+}
+.btns_switcher {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 82px;
+    margin-bottom: 45px;
+    
+}
+.rt_btn {
+    color: #F6E8FF;
+    text-align: center;
+    font-family: Bona Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+}
+.rt_btn_active {
+    color: rgba(237, 228, 243, 1);
+    background-color: rgba(126, 89, 163, 1);
+    border-color: rgba(126, 89, 163, 1);
+    cursor: default;
+    pointer-events: none;
+}
+.rating .button {
+    padding: 0.65rem 1.625rem;
+}
+.rt_table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-bottom: 100px;
+}
+@media (max-width: 500px) {
+    .rt_table tbody {
+        overflow-x: scroll;
+    }
+}
+.rt_table tr {
+    height: 70px;
+    max-height: 70px;
+    border: none;
+    margin-bottom: 10px;
+}
+.rt_header,th {
+    color: #EDE4F3;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Bona Nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+    background-color: #4C3663;
+}
+.rt_header tr,td,th {
+    border: none;
+}
+.rt_table tr td:nth-child(1) {
+    width: 92px;
+}
+.rt_table tr td:nth-child(2) {
+    width: 400px;
+}
+.rt_table tr td:nth-child(3) {
+    width: 165px;
+}
+.rt_table tr td:nth-child(4) {
+    width: 180px;
+}
+.rt_table tr td:nth-child(5) {
+    width: 153px;
+}
+.rt_table tr td:nth-child(6) {
+    width: 350px;
+}
+.rt_table .rt_col {
+    color: #EDE4F3;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Bona Nova;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+.rt_col:hover {
+    transform:scale(105%);
+    filter:brightness(120%);
+}
+.rt_col td,img {
+    vertical-align: middle;
+    text-align: center;
+}
+.rt_classimg {
+    margin-right: 10px;
+    mix-blend-mode: luminosity;
+}
+.rt_guildimg {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.rt_col td:nth-child(even) {
+    background-color: #1E122C;
+}
+.rt_col td:nth-child(odd) {
+    background-color: #261836;
+}
+.rt_col td:nth-child(3) {
+    color: #D3A8F0;
+}
+.rt_table {
+    display: none;
+    animation: table .7s ease-in-out;
+}
+@keyframes table {
+    0% {
+        opacity: 0;
+        transform: translateY(2%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.rt_table.active {
+    display: flex;
+}
+.newbies_date {
+    text-align: center;
+    color: #EDE4F3;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Bona Nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    display: none;
+}
+.newbies_date.active {
+    display: block;
+}
+.s-download__container {
+    border: none;
+    -webkit-mask: linear-gradient(to bottom,
+            rgba(0, 0, 0) 0%,
+            rgb(0, 0, 0) calc(100% - 16.25rem),
+            rgba(0, 0, 0, 0) 100%);
+}
+.s-download__box {
+    background-image: url('../images/s-download/launcher.webp');
+    opacity: 0.8;
+}
+.lk_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #13091E;
+}
+.lk_server {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    color: #EDE4F3;
+    text-align: center;
+    font-family: Bona Nova;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+    text-decoration: none;
+    overflow: hidden;
+}
+.lk_wrapper {
+    position: absolute;
+    pointer-events: none;
+    z-index: 50;
+}
+.lk_wrapper p {
+    margin-top: -90px;
+}
+.lk_bg.old {
+    background-image: url('../images/old.webp');
+    background-position: 25% center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.lk_bg.new {
+    background-image: url('../images/new.webp');
+    background-position: 55% center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.lk_bg {
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    background-size: cover;
+}
+.lk_bg:hover {
+    transform: scale(103%);
+    opacity: 0.5;
+}
+@media (max-width: 500px) {
+    .lk_container {
+        flex-direction: column;
+    }
+    .lk_server {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+/* Treasures */
+.treasures {
+    /* padding-bottom: 10%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.treasures_title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+.treasures_title img {
+    width: 749px;
+    margin-top: -80px;
+    z-index: 5;
+    user-select: none;
+}
+.treasures_title::before {
+    position: absolute;
+    content: '';
+    background: url(../images/treasures/clouds.png) no-repeat;
+    width: 979px;
+    height: 358px;
+    margin-top: 25px;
+}
+.treasures_timer {
+    margin-top: -10px;
+    pointer-events: none;
+}
+.treasures_timer .desc {
+    display: none;
+}
+.desc.treasures {
+    z-index: 5;
+    font-size: 24px;
+    margin-top: -45px;
+    letter-spacing: 2px;
+}
+.chest_content {
+    position: relative;
+    margin-top: -50px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 90px;
+}
+.chest_content .chest {
+    display: flex;
+    align-items: center;
+}
+.chest_content .chest::before {
+    position: absolute;
+    left: -5px;
+    top: -45px;
+    content: '';
+    background: url(../images/treasures/title_deco.png) no-repeat;
+    width: 457px;
+    height: 395px;
+}
+.treasures_deco {
+    position: absolute;
+    left: -15px;
+    top: -180px;
+    content: '';
+    background: url(../images/treasures/deco.png) no-repeat;
+    width: 1169px;
+    height: 480px;
+    z-index: -1;
+}
+.chest_content .chest img {
+    margin-left: 13px;
+    position: relative;
+    z-index: 4;
+}
+.loot_wrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    margin-top: 90px;
+}
+.loot_wrapper .btns {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.loot_wrapper .btns .btn:nth-child(1) {
+    opacity: 0.9;
+}
+.loot_wrapper .btns .btn:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    width: 216px;
+    height: 47px;
+    background-color: #DA9DFF;
+    opacity: 0.6;
+    filter: blur(20px);
+    z-index: -5;
+    border-radius: 200px;
+}
+.loot_row {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 983px;
+    background: linear-gradient(270deg, rgba(23, 13, 32, 0.00) 0%, rgba(23, 13, 32, 0.70) 75.52%);
+    z-index: 1;
+    margin-bottom: 25px;
+}
+.loot_row::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    top: 0;
+    opacity: 0.6;
+    background: linear-gradient(90deg, #BA83DE 0%, rgba(159, 87, 207, 0.00) 100%);
+}
+.loot_row::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    opacity: 0.6;
+    background: linear-gradient(90deg, #BA83DE 0%, rgba(159, 87, 207, 0.00) 100%);
+}
+.loot_row .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 18px 20px 18px 90px;
+    gap: 15px;
+}
+.loot_row .items .item img {
+    width: 34px;
+}
+.item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/treasures/item_bg.png') no-repeat;
+    width: 44px;
+    height: 44px;
+    transition: .2s;
+}
+.item:hover{
+    filter: brightness(115%);
+}
+.item.rare::after {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    border: 2px solid #DD4C4C;
+    opacity: 0.7;
+    filter: blur(0.9px);
+}
+.item.gold::after {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    border: 2px solid #F4BF00;
+    opacity: 0.7;
+    filter: blur(0.9px);
+}
+.item.green::after {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    border: 2px solid #A9FB41;
+    opacity: 0.7;
+    filter: blur(0.9px);
+}
+.item.blue::after {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    border: 2px solid #41ADFB;
+    opacity: 0.7;
+    filter: blur(0.9px);
+}
+
+/* rewards */
+
+.rewards_content {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    margin-bottom: 90px;
+}
+.guarantee {
+}
+.guarantee .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 5px;
+}
+.guarantee .text::after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: -70px;
+    width: 442px;
+    height: 188px;
+    background: url('../images/treasures/deco_text.png') no-repeat;
+    z-index: -1;
+}
+.rewards_content .text .title {
+    font-size: 26px;
+    text-align: left;
+    white-space: nowrap;
+}
+.rewards_content .text .subtitle {
+    color: rgba(237, 228, 243, 0.90);
+    font-size: 20px;
+    font-family: Bona Nova;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+    margin-top: -1px;
+}
+.guarantee .list {
+    max-width: 374px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    margin-top: 15px;
+}
+.guarantee .list_item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 58px;
+    background: linear-gradient(270deg, rgba(23, 13, 32, 0.00) 11.98%, rgba(23, 13, 32, 0.70) 100%);
+    padding-left: 59px;
+}
+.guarantee .list_item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    opacity: 0.6;
+    background: linear-gradient(90deg, #BA83DE 0%, rgba(159, 87, 207, 0.00) 100%);
+}
+.guarantee .list_item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    opacity: 0.6;
+    background: linear-gradient(90deg, #BA83DE 0%, rgba(159, 87, 207, 0.00) 100%);
+}
+.guarantee .list_item .pcs {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: url('../images/treasures/bg_pcs.png') no-repeat;
+    z-index: 5;
+}
+.guarantee .list_item .pcs p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #E0B0FF;
+    text-align: center;
+    font-family: AGFriquer,Times New Roman,Times,serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+.guarantee .list_item .pcs p::after {
+    content: 'шт.';
+    color: #E9DDF2;
+    font-size: 16px;
+    font-weight: 400;
+    font-variant: small-caps;
+    margin-top: -5px;
+    margin-left: 2px;
+}
+.guarantee .list_item .reward.fx {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.guarantee .list_item .reward {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 40px;
+    text-decoration: none;
+    transition: .2s;
+}
+.reward_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 10px; */
+}
+.reward_wrapper::after {
+    content: 'На выбор';
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background: rgba(16, 6, 20, 0.4);
+    font-family: AGFriquer,Times New Roman,Times,serif;
+    font-size: 10px;
+    pointer-events: none;
+    width: 100%;
+    top: -8px;
+    text-align: center;
+    font-feature-settings: "lnum";
+    font-variant-numeric: lining-nums;
+    text-shadow: 0px 0px 2px #302216;
+    filter: drop-shadow(0px 0px 5px rgb(163, 132, 189));
+}
+.guarantee .list_item .reward.fx a {
+    transition: .2s;
+}
+.guarantee .list_item .reward.fx a:hover {
+    filter: brightness(115%);
+}
+.list_item .reward_text a::after {
+    content: attr(data-count);
+    color: #EDE4F3;
+    margin-left: 5px;
+}
+.reward_wrapper img {
+    
+    height: 32px;
+}
+
+.reward_text {
+    display: flex;
+    flex-direction: column;
+}
+.reward_text a {
+    font-size: 13px;
+}
+.guarantee .list_item .reward:hover {
+    filter: brightness(115%);
+}
+.guarantee .list_item .reward.fx:hover {
+    filter: brightness(100%);
+}
+.guarantee .list_item .reward p, a {
+    font-family: AGFriquer,Times New Roman,Times,serif;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    opacity: 0.9;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.guarantee .list_item .reward p.gold,a.gold {
+    color: #F0D463;
+}
+.guarantee .list_item .reward p.orange,a.orange {
+    color: #FA8239;
+}
+.guarantee .list_item .reward p.purple,a.purple {
+    color: #A45CD8;
+}
+.guarantee .list_item .reward p.green,a.green {
+    color: #7CDE65;
+}
+
+/* rating */
+
+.rating {
+    display: flex;
+    flex-direction: column;
+}
+.main_reward {
+    display: flex;
+    align-items: center;
+    width: 852px;
+    height: 238px;
+    background-image: url('../images/treasures/tr.png');
+    text-decoration: none;
+    transition: .2s;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+.main_reward:hover {
+    filter: brightness(110%);
+}
+.main_reward .text {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 28px;
+    padding-left: 95px;
+}
+.main_reward .text .title {
+    font-size: 54px;
+}
+.main_reward .subtitle {
+}
+.rating_wrapper {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(130, 113, 141, 0.20);
+    font-family: AGFriquer,Times New Roman,Times,serif;
+}
+.r_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    padding: 0 35px;
+    color: #8F7C9C;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+    letter-spacing: 0.2px;
+    background: linear-gradient(270deg, rgba(23, 13, 32, 0.00) 0%, rgba(23, 13, 32, 0.70) 52.08%, rgba(23, 13, 32, 0.00) 100%);
+}
+.r_header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    opacity: 0.4;
+    background: linear-gradient(90deg, rgba(159, 87, 207, 0.00) 0%, #BA83DE 50%, rgba(159, 87, 207, 0.00) 100%);
+    top: 0;
+}
+.r_header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    opacity: 0.4;
+    background: linear-gradient(90deg, rgba(159, 87, 207, 0.00) 0%, #BA83DE 50%, rgba(159, 87, 207, 0.00) 100%);
+    bottom: 0;
+}
+.r_header p:nth-child(1) {
+    width: 32px;
+    margin-right: 90px;
+}
+.r_header p:nth-child(2) {
+    width: 228px;
+    margin-right: 110px;
+    text-align: center;
+}
+.r_header p:nth-child(3) {
+    width: 100px;
+    margin-right: 142px;
+    text-align: center;
+}
+.r_header p:nth-child(4) {
+    width: 100px;
+    text-align: center;
+}
+.r_player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 70px);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    padding: 0 35px;
+    background: linear-gradient(270deg, rgba(23, 13, 32, 0.00) 0%, rgba(23, 13, 32, 0.70) 50%, rgba(23, 13, 32, 0.00) 100%);
+    border: 1px solid rgba(206, 172, 228, 0.20);
+    transition: .2s ease-in-out;
+}
+.r_player:hover {
+    transform: scale(105%);
+}
+.r_player:nth-child(odd) {
+    background: linear-gradient(270deg, rgba(23, 13, 32, 0.00) 0%, rgba(41, 19, 49, 0.70) 50%, rgba(23, 13, 32, 0.00) 100%);
+}
+.r_player p:nth-child(1) {
+    width: 32px;
+    margin-right: 90px;
+    color: #EDE4F3;
+    opacity: 0.9;
+}
+.r_player p:nth-child(3) {
+    width: 100px;
+    margin-right: 142px;
+    text-align: center;
+    color: #D49FFD;
+    opacity: 0.9;
+}
+.r_player .class {
+    color: #F2F2F2;
+    width: 228px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.r_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: center;
+}
+.r_wrapper.ch::after {
+    content: 'На выбор';
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background: rgba(16, 6, 20, 0.4);
+    font-family: AGFriquer,Times New Roman,Times,serif;
+    font-size: 12px;
+    pointer-events: none;
+    padding: 0 4px;
+    top: -8px;
+    text-align: center;
+    font-feature-settings: "lnum";
+    font-variant-numeric: lining-nums;
+    text-shadow: 0px 0px 2px #302216;
+    filter: drop-shadow(0px 0px 5px rgb(163, 132, 189));
+}
+.r_wrapper a {
+    transition: .2s;
+    
+}
+.reward.co {
+    position: relative;
+}
+.reward.co::after {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background: rgba(16, 6, 20, 0.4);
+    font-family: Bona Nova;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    font-feature-settings: "lnum";
+    font-variant-numeric: lining-nums;
+    text-shadow: 0px 0px 2px #302216;
+    filter: drop-shadow(0px 0px 5px rgb(163, 132, 189));
+    bottom: 0px;
+    content: attr(data-count);
+}
+.r_wrapper a:hover {
+    filter: brightness(115%);
+}
+.r_player .class p {
+    opacity: 0.9;
+}
+.r_player .reward {
+    display: flex;
+    justify-content: center;
+    /* width: 100px; */
+}
+.r_player .reward img {
+  
+    height: 32px;
+}
+.r_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+.r_update {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    opacity: 0.5;
+    color: rgba(237, 228, 243, 0.90);
+    text-align: center;
+    font-family: Bona Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+}
+.r_update::before {
+    content: '';
+    background: url('../images/treasures/refresh.png') no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.r_info .btn::after {
+    position: absolute;
+    content: '';
+    width: 216px;
+    height: 47px;
+    background-color: #DA9DFF;
+    opacity: 0.6;
+    filter: blur(20px);
+    z-index: -5;
+    border-radius: 200px;
+}
+.list_item .reward p::after {
+    content: attr(data-count);
+    color: #EDE4F3;
+    margin-left: 5px;
+}
+@media (min-width:2040px) {
+    .loot_wrapper {
+        justify-content: center;
+    }
+    .loot_row {
+        max-width: 78%;
+    }
+}
+@media (max-width:1340px) {
+    .loot_wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+    .loot_row {
+        width: 100%;
+        
+    }
+    .loot_wrapper .btns {
+        justify-content: center;
+        z-index: 5;
+    }
+    .chest_content .chest {
+        position: relative;
+        left: -30%;
+    }
+    .rewards_content {
+        width: 100%;
+        justify-content: center;
+        gap: unset;
+    }
+    
+}
+@media (max-width:840px) {
+    .rating {
+        
+    }
+    .r_player {
+        width: auto;
+    }
+    .rating_wrapper {
+        overflow-x: scroll;
+        align-items: flex-start;
+    }
+    .rewards_content {
+        flex-direction: column;
+    }
+    .guarantee .list {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        margin-top: 15px;
+    }
+    .main_reward .text {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 28px;
+        padding-left: 0;
+    }
+    .main_reward {
+        justify-content: center;
+        width: 100%;
+        background-size: cover;
+        height: auto;
+        margin: 50px 0;
+    }
+    .loot_wrapper {
+        margin-top: 150px;
+    }
+    .loot_row {
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(23, 13, 32, 0.00) 0%, rgba(23, 13, 32, 0.70) 75.52%);
+    }
+    .loot_row .items {
+        padding: 18px 20px 18px 20px;
+        justify-content: center;
+    }
+}
+@media (max-width:450px) {
+    .loot_wrapper {
+        margin-top: 470px;
+    }
+    .loot_row {
+        background: rgba(23, 13, 32, 0.70);
+    }
+    .chest_content {
+        margin-bottom: 420px;
+    }
+    .main_reward .text {
+        transform: scale(80%);
+    }
+}
+.treasures_banner {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: url('../images/treasures/treasures_banner.png') no-repeat;
+    transition: .2s;
+    width: 271px;
+    height: 219px;
+    z-index: 10;
+}
+.treasures_banner:hover {
+    filter: brightness(110%);
+}
+@media (max-width:450px) {
+    .treasures_banner {
+        display: none;
+    }
+}
+.onl__count-visibe {
+    text-wrap: nowrap;
+}
+.serv-list__img {
+    top: 60%;
+}
+@media (min-width:450px) {
+    .social {
+        height: 100%;
+    }
+}
+.social__members {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0.1875rem 0 #2e193c;
+    font-size: 1rem;
+    letter-spacing: .02em;
+    color: #addd90;
+}
+.social__members::before {
+    content: 'Подписчиков:';
+    /* background: url('../images/user_icon.svg');
+    background-size: cover;
+    margin-bottom: 3px; */
+    /* width: 26px;
+    height: 22px; */
+    color: #fff;
+    margin-right: 4px;
+}
+.promofl {
+    position: fixed;
+    right: 0%;
+    top: 55%;
+    background: url('../images/newb.png') no-repeat;
+    width: 301px;
+    height: 215px;
+    transition: .2s ease-in-out;
+    z-index: 50;
+    animation: promofl 1.5s ease-in-out infinite alternate both;
+}
+.promofl:hover {
+    filter: brightness(115%);
+}
+@keyframes promofl {
+    from {
+      transform: translateX(0%);
+      /* transform: scale(100%); */
+    }
+  
+    to {
+        transform: translateX(5%);
+        /* transform: scale(103%); */
+    }
+}
+@media (max-width:500px) {
+    .promofl {
+        display: none;
+    }
+}
+.s-download__box.funline {
+    background-image: url('../images/s-download/launcher_funline.webp');
+}
+.mmotop {
+    background: url('../images/mm2.png') no-repeat;
+    width: 1.5rem;
+    background-size: cover;
+    height: 1.5rem;
+    opacity: 0.6;
+    transition: .2s;
+}
+.mmotop:hover {
+    opacity: 1;
+}
