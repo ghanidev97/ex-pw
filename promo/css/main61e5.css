@@ -2426,6 +2426,9 @@ body {
 .about__item_num_4 {
     top: calc(var(--about-height)/var(--about-items-count)*4)
 }
+.about__item_num_5 {
+    top: calc(var(--about-height)/var(--about-items-count)*5)
+}
 
 .about__item:after,
 .about__item:before,
@@ -3733,7 +3736,8 @@ body {
     }
 
     .about__item_num_3,
-    .about__item_num_4 {
+    .about__item_num_4,
+    .about__item_num_5 {
         --about-bg-pos-y: -26rem
     }
 
@@ -3746,8 +3750,9 @@ body {
     }
 
     .about__body {
-        padding: 1.25rem 2.5rem;
-        max-width: 42.5rem
+        /* padding: 1.25rem 2.5rem; */
+        /* max-width: 42.5rem */
+        max-width: 100%
     }
 
     .about__content {
